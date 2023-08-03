@@ -53,18 +53,18 @@ In addition to the printed parts, you will need two RC wheels (HEX17) and a hand
 
 Component | Description
 ---- | ----
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/wheels.png" height="125px"> | Wheels Louise B-Rocket hex 17mm 1:8 Buggy (2 pcs)
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/screws.jpg" height="100px"> | Screws M3x20 (4 pcs)
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/nutsM3.png" height="110px"> | Nuts M3 
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/screwsM10.png" height="85px"> | Screws M10x25 (2 pcs)
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/nutsM10.png" height="95px">  | Nuts M10 (2 pcs)
+<img src="images/wheels.png" height="125px"> | Wheels Louise B-Rocket hex 17mm 1:8 Buggy (2 pcs)
+<img src="images/screws.jpg" height="100px"> | Screws M3x20 (4 pcs)
+<img src="images/nutsM3.png" height="110px"> | Nuts M3 
+<img src="images/screwsM10.png" height="85px"> | Screws M10x25 (2 pcs)
+<img src="images/nutsM10.png" height="95px">  | Nuts M10 (2 pcs)
 
 --------------------------
 
 ## Electrical components
 
 ### Structure
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/scheme.png" height="537px">
+<img src="images/scheme.png" height="537px">
 <p style="text-align: center;">System diagram</p>
 
 - Connection pinout
@@ -132,28 +132,28 @@ The BLDC motors I have used are the iPower GM4108. You can use any other gimbal 
 
 Component | Description
 ---- | ----
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/motor.jpg" height="110px"> | iPower Motor GM4108H-120T
+<img src="images/motor.jpg" height="110px"> | iPower Motor GM4108H-120T
 
 ### Position sensors
 In my case, I used two magnetic sensors (attached to the motors). You can use any type of position sensor that is supported by the [*Simple**FOC**Shields library*](https://simplefoc.com/).
 
 Component | Description
 ---- | ----
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/motor_sensor.jpg" height="130px"> | Magnetic sensor AS5048 (attached to the motors)
+<img src="images/motor_sensor.jpg" height="130px"> | Magnetic sensor AS5048 (attached to the motors)
 
 ### BLDC driver
 For this project, I used [*Simple**FOC**Shields v2.0.4*](https://simplefoc.com/), which enables the use of the FOC algorithm with BLDC motors.
 
 Component | Description
 ---- | ----
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/simplefocShield.jpg" height="130px"> | [SimpleFOC Shield v2.0.4](https://simplefoc.com/)
+<img src="images/simplefocShield.jpg" height="130px"> | [SimpleFOC Shield v2.0.4](https://simplefoc.com/)
 
 ### IMU module
 I used the IMU MPU6050 with integrated DMP.
 
 Component | Description
 ---- | ----
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/MPU6050-Module.jpg" height="150px"> | IMU MPU6050
+<img src="images/MPU6050-Module.jpg" height="150px"> | IMU MPU6050
 
 ### Embedded computing board & Microcontroller
 Based on the [*SimpleFOC Balancing Robot*](https://github.com/simplefoc/Arduino-FOC-balancer.git), I decided to extend the robot and added mainly an NVIDIA Jetson Nano for using computer vision algorithms and an AI model.
@@ -161,18 +161,18 @@ I used the ESP8266 WiFi server for testing and initial calibration of the robot.
 
 Component | Description
 ---- | ----
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/nvidiaJetsonNano.jpeg" height="140px"> | Nvidia Jetson Nano B01
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/stm32_nucleo.jpeg" height="105px"> | STM32 F446 Nucleo
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/esp8266.jpg" height="80px"> | ESP8266
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/lcd.png" height="140px"> | [Waveshare RP2040 LCD IPS 1,28'' 240 x 240 px](https://www.waveshare.com/wiki/RP2040-LCD-1.28)
+<img src="images/nvidiaJetsonNano.jpeg" height="140px"> | Nvidia Jetson Nano B01
+<img src="images/stm32_nucleo.jpeg" height="105px"> | STM32 F446 Nucleo
+<img src="images/esp8266.jpg" height="80px"> | ESP8266
+<img src="images/lcd.png" height="140px"> | [Waveshare RP2040 LCD IPS 1,28'' 240 x 240 px](https://www.waveshare.com/wiki/RP2040-LCD-1.28)
 
 ### Others
 I added a camera, display and distance sensors. You can use any NVIDIA Jetson Nano compatible camera.
 
 Component | Description
 ---- | ----
-<img src="https://www.waveshare.com/w/fkbk/swtumb.php?f=IMX219-83-Stereo-Camera-1.jpg&width=300" height="110px"> | [IMX219-83 Stereo Camera](https://www.waveshare.com/wiki/IMX219-83_Stereo_Camera)
-<img src="/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/images/SEN0307.png" height="120px"> | [URM09 Analog Ultrasonic Sensor](https://www.dfrobot.com/product-1862.html) 2pcs
+<img src="images/imx219-83-stereo-camera.jpg" height="145px"> | [IMX219-83 Stereo Camera](https://www.waveshare.com/wiki/IMX219-83_Stereo_Camera)
+<img src="images/SEN0307.png" height="120px"> | [URM09 Analog Ultrasonic Sensor](https://www.dfrobot.com/product-1862.html) 2pcs
 ---| [Battery LiFePO4 9.9V 2500 mAh](https://btobattery.com/)
 
 --------------------------
@@ -182,28 +182,25 @@ Component | Description
 ### STM32 Code
 The code for the STM32 is actually almost the same as for the example [*SimpleFOC Balancing Robot*](https://github.com/simplefoc/Arduino-FOC-balancer.git) with a few modifications. 
 
-For more details, see section [stm32_BLDC_Controller](/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/stm32_BLDC_Controller)
-
-### ESP Code
-In the initial phase, the ESP8266 was used as a WiFi server to control the robot and make an initial calibration of the controller settings. 
-
-For more details, see section [esp8266_Basic_Server](/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/esp8266_Basic_Server)
+For more details, see section [stm32_BLDC_Controller](https://github.com/Progressia/stm32_BLDC_Controller)
 
 ### NVIDIA Jetson Nano Code
 As mentioned earlier. NVIDIA Jetson Nano is used to implement motion algorithms and implement AI models. As an example, it demonstrates how to get a remote view from a camera mounted on a robot and stream it to a smartphone. 
 
-For more details, see section [nvidiaJetson_app](/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/nvidiaJetson_app)
+For more details, see section [nvidiaJetson_app](https://github.com/Progressia/Jetson_Balancing_Robot/tree/master/nvidiaJetson_app)
 
 ### Robot script
 Script in Python with using object-oriented programming.
 
+For more details, see section [RobotApp](https://github.com/Progressia/Jetson_Balancing_Robot/tree/master/RobotApp)
+
 ### Remote control app
 I made the app to handle the robot's functions, parameter settings and camera view on the Flutter framework. You can compile the app on Android, iOS(not tested), Linux, Windows (not tested) and others. 
 
-For more details, see section [flutter_remote_controller](/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/flutter_remote_controller)
+For more details, see section [flutter_remote_controller](https://github.com/Progressia/flutter_remote_jetson_controller)
 
 ### RP2040 LCD UART
 The application, on the RP2040, displays information from the NVIDIA Jetson platform via the UART
 
-For more details, see section [rp2040_lcd_uart](/home/dell/PROGRESSIA/robots/Jetson_Balancing_Robot/rp2040_lcd_uart)
+For more details, see section [rp2040_lcd_uart](https://github.com/Progressia/RP2040_LCD_USB)
 

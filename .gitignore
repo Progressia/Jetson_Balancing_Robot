@@ -1,5 +1,5 @@
 flutter_remote_jetson_controller/
-RP2040_LCD_UART/
+RP2040_LCD_USB/
 stm32_BLDC_Controller/
 file_info_script.py
 
