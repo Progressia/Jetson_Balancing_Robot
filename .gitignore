@@ -2,6 +2,7 @@ flutter_remote_jetson_controller/
 RP2040_LCD_USB/
 stm32_BLDC_Controller/
 file_info_script.py
+file_info_script2.py
 
 nvidiaJetson_app/.vscode
 nvidiaJetson_app/helpful_cmd.txt

@@ -2,7 +2,7 @@
 
 # Connect to my WiFi Hotspot
 network_name="P10_lite"
-network_password="12345678"
+network_password="Magdalena_88!"
 
 while true; do
   nmcli device wifi rescan
