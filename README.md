@@ -2,7 +2,8 @@
 
 A two-wheeled balancing robot inspired by the [*SimpleFOC Balancing Robot*](https://github.com/simplefoc/Arduino-FOC-balancer.git)
 
-ToDo: Real photo -- comming soon
+<img src="images/IMG_125057s.jpg" height="400px">
+<img src="images/IMG_125114s.jpg" height="400px"> 
 
 Modular two wheeled balancing robot based on gimbal BLDC motors and [*Simple**FOC**Shields*](https://simplefoc.com/). NVIDIA Jetson Nano is use  to allow for control motion on base computer vision algorithms and AI models. Application for remote control of robot was build on flutter framework. 3D models with STL files are in CAD folder.
 
